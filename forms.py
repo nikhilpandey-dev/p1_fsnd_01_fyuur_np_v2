@@ -48,7 +48,7 @@ class VenueForm(Form):
         'image_link'
     )
     genres = SelectMultipleField(
-        # TODO implement enum restriction
+        # TDO implement enum restriction
         # https://knowledge.udacity.com/questions/638321
         # We are not supposed to look into it
         'genres', validators=[DataRequired()],
@@ -81,7 +81,7 @@ class ArtistForm(Form):
         choices=State.choices()
     )
     phone = StringField(
-        # TODO implement validation logic for phone
+        # TOO implement validation logic for phone
         # https://knowledge.udacity.com/questions/638321
         # We are not supposed to look into it
         'phone'
@@ -94,7 +94,7 @@ class ArtistForm(Form):
         choices=Genre.choices()
      )
     facebook_link = StringField(
-        # TODO implement enum restriction
+        # TDO implement enum restriction
         # https://knowledge.udacity.com/questions/638321
         # We are not supposed to look into it
         'facebook_link', validators=[URL()]
